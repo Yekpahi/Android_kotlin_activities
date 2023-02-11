@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:title="Menu principal">
+        <menu>
+    <group>
+        <item
+            android:title="Home"
+            android:id="@+id/home"
+            android:icon="@drawable/ic_home"
+            />
+        <item
+            android:title="Hotel"
+            android:id="@+id/hotel"
+            android:icon="@drawable/ic_hotel"
+            />
+        <item
+            android:title="Buy ticket"
+            android:id="@+id/buy_ticket"
+            android:icon="@drawable/ic_ticket"
+            />
+        <item
+            android:title="Tourist map"
+            android:id="@+id/map"
+            android:icon="@drawable/ic_map"
+            />
+    </group>
+        </menu>
+    </item>
+    <item android:title="Profile">
+        <menu>
+            <group>
+                <item android:title="Login"
+                    android:id="@+id/login"
+                    android:icon="@drawable/ic_login"
+                    />
+            </group>
+        </menu>
+    </item>
+
+    <item android:title="Contact us">
+        <menu>
+            <group>
+                <item android:title="Web"
+                    android:id="@+id/web"
+                    android:icon="@drawable/ic_web"
+                    />
+                <item android:title="Instagram"
+                    android:id="@+id/instagram"
+                    android:icon="@drawable/ic_insta"
+                    />
+                <item android:title="Whatsapp"
+                    android:id="@+id/whatsapp"
+                    android:icon="@drawable/ic_whatsapp"
+                    />
+                <item android:title="Share"
+                    android:id="@+id/share"
+                    android:icon="@drawable/ic_share"
+                    />
+            </group>
+        </menu>
+    </item>
+</menu>
