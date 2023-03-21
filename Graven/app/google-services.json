@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "175947967354",
+    "firebase_url": "https://naturecollection-e2e08-default-rtdb.firebaseio.com",
+    "project_id": "naturecollection-e2e08",
+    "storage_bucket": "naturecollection-e2e08.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:175947967354:android:a89c5917b68ca0a7a0c4c3",
+        "android_client_info": {
+          "package_name": "com.prince.naturecollection"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "175947967354-hpgukjlks1fb081o1pnd00rfao3oo93h.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCHvFIY83rcty26QeTh_0973bjLSpmhjH4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "175947967354-hpgukjlks1fb081o1pnd00rfao3oo93h.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
