@@ -45,4 +45,5 @@ class PlantRepository {
         } )
 
     }
+    fun updatePlant(plant : PlantModel) = databaseRef.child(plant.id).setValue(plant)
 }

@@ -12,6 +12,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.prince.naturecollection.MainActivity
 import com.prince.naturecollection.PlantModel
+import com.prince.naturecollection.PlantRepository
 import com.prince.naturecollection.R
 
 //layoutId pour générer un adapter générique tous les recyclerView du fragment
@@ -40,6 +41,9 @@ class PlantAdapter  (
         // Recuperer les information de la plante
         val currentPlant = plantList[position]
 
+        //Recuperer le repository
+        val repo = PlantRepository()
+
         // Utiliser glide pour recuperer l'image à partir de son lien -> composant
         Glide.with(context).load(Uri.parse(currentPlant.imageUrl)).into(holder.plantImage)
 
@@ -53,6 +57,14 @@ class PlantAdapter  (
         }
         else {
             holder.starIcon.setImageResource(R.drawable.ic_unlike)
+        }
+
+        // rajouter une interaction sur cette étoile
+        holder.starIcon.setOnClickListener {
+            //inverser si le bouton est liker ou non
+            currentPlant.liked = !currentPlant.liked
+            //mettre à jour l'objet plante
+            repo.updatePlant(currentPlant)
         }
     }
 
