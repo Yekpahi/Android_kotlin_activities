@@ -5,6 +5,9 @@ class PlantModel(
     val name: String = "Tulipe",
     val description : String = "Petite description",
     val imageUrl : String = "https://images.freeimages.com/images/large-previews/ae3/a-tulip-flower-1344963.jpg",
-    var liked: Boolean = false
+    val grow: String = "Intermediaire",
+    val water: String = "Moyenne",
+    var liked: Boolean = false,
+
 
 )

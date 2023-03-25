@@ -35,4 +35,17 @@
         android:layout_marginTop="100dp"
         />
 
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigation_view"
+        android:layout_width="match_parent"
+        android:layout_height="105dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:menu="@menu/bottom_navigation_menu"
+        android:theme="@style/BottomNavigationTheme"
+        android:background="@color/green"
+
+        />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

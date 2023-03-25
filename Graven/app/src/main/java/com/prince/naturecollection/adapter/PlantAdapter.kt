@@ -10,14 +10,11 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.prince.naturecollection.MainActivity
-import com.prince.naturecollection.PlantModel
-import com.prince.naturecollection.PlantRepository
-import com.prince.naturecollection.R
+import com.prince.naturecollection.*
 
 //layoutId pour générer un adapter générique tous les recyclerView du fragment
 class PlantAdapter  (
-    private val context : MainActivity,
+    val context : MainActivity,
     private val plantList: List<PlantModel>,
     private val layoutId: Int
         ): RecyclerView.Adapter<PlantAdapter.ViewHolder>(){
@@ -65,6 +62,12 @@ class PlantAdapter  (
             currentPlant.liked = !currentPlant.liked
             //mettre à jour l'objet plante
             repo.updatePlant(currentPlant)
+        }
+
+        // interaction lors du clic sur une plante
+        holder.itemView.setOnClickListener {
+            //afficher le popup
+           PlantPopup(this, currentPlant).show()
         }
     }
 
